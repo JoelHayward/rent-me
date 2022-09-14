@@ -8,10 +8,8 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    //database Name
-    const databaseName = "Rentals";
     const con = await mongoose.connect(
-      `mongodb://host.docker.internal:27017/${databaseName}`,
+      `mongodb+srv://joel:mongo7zc3e@cluster0.vaoiamm.mongodb.net/?retryWrites=true&w=majority`,
       {useNewUrlParser: true}
     );
     console.log(`Database connected : ${con.connection.host}`);
