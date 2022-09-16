@@ -1,47 +1,52 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const mongoose = require('mongoose')
-const {MongoClient} = require('mongodb');
+const mongoose = require("mongoose");
+const { MongoClient, ServerApiVersion } = require('mongodb');
 const router = express.Router();
 
 app.use(cors());
 
 //connect to mongodb
-const url = `mongodb+srv://joel:mongo7zc3e@cluster0.vaoiamm.mongodb.net/?retryWrites=true&w=majority`;
-const client = new MongoClient(url);
 
 
-const connectionParams={
-    useNewUrlParser: true,
-    useUnifiedTopology: true 
-}
-mongoose.connect(url,connectionParams)
-    .then( () => {
-        console.log('Connected to the database ')
-        // Make the appropriate DB calls
-        listDatabases(client);
-    })
-    .catch( (err) => {
-        console.error(`Error connecting to the database. n${err}`);
-    })
+const uri = `mongodb+srv://joel:mongo7zc3e@cluster0.vaoiamm.mongodb.net/?retryWrites=true&w=majority`;
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("sample_airbnb").collection("listingsAndReviews");
+  console.log('DB connected')
+  // perform actions on the collection object
+  client.close();
+});
 
-    async function listDatabases(client){
-      databasesList = await client.db().admin().listDatabases();
-   
-      console.log("Databases:");
-      databasesList.databases.forEach(db => console.log(` - ${db.name}`));
-  };
-
-  
+const agg = [
+  {
+    $limit: 20
+  }
+]
 
 
-//initialise routes
-app.use('/api', require("./routes/api"));
+app.get("/rentals", async function (req, res){
+  try {
+    await client.connect();
+    // database and collection code goes here
+    const coll = client.db("sample_airbnb").collection("listingsAndReviews");
+    const cursor = coll.aggregate(agg);
+    // find code goes here
+    // const cursor = coll.find()
+   const data = await cursor.toArray()
+   console.log(data)
+      res.send(data)
+      
+    }
+ finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+})
 
 
-// 'https://data.mongodb-api.com/app/data-siwip/endpoint/data/v1/action/find'
 
 app.listen(8080, function () {
   console.log("listening on 8080");
-});
+})

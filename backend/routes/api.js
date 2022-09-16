@@ -2,7 +2,12 @@ const express = require("express");
 const Listing = require("../models/listings");
 const router = express.Router();
 
-//get a list of rental properties from the database
+
+
+
+// get a list of rental properties from the database
+
+// get a list of rental properties from the database
 router.get("/rentals", function (req, res) {
   Listing.find({}).then(function(sample_airbnb){
     res.send(sample_airbnb)
