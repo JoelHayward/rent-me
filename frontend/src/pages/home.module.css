@@ -1,0 +1,198 @@
+.homePage {
+  /* width: 1280px; */
+  height: 6046px;
+  flex-grow: 0;
+  background-color: #fff;
+}
+
+
+.navbar{
+  display: flex;
+  height: 92.7px;
+  margin: 0 0 0.4px;
+  padding: 0 0 0 30px;
+  background-color: #fff;
+}
+
+.Logo {
+  margin: 25px 665px 18.5px 0;
+}
+
+.homebtn {
+  margin: 0 0 0 665px;
+  padding: 33px 50px 32.7px 48px;
+  background-color: #fff;
+}
+
+.home {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.listingbtn {
+  /* margin: 0 172px 0 0; */
+  padding: 33px 16px 32.7px 17px;
+  background-color: #fff;
+}
+
+.listings {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.ownerbtn {
+  /* margin: 1.9px 332px 0 1236px; */
+  padding: 33px 44px 31.3px 47px;
+  background-color: #fff;
+}
+
+.owner {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.aboutbtn {
+  /* margin: 0 0 0 172px; */
+  padding: 33px 32px 32.7px 31px;
+  background-color: #fff;
+}
+
+.about {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.contactbtn {
+  padding: 32px 38px 33.7px 39px;
+  background-color: #fff;
+}
+
+.contact {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* HERO BAR */
+.heroBox {
+position: absolute;
+}
+
+
+.herobar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1728px;
+  position: absolute;
+  height: 513px;
+  flex-grow: 0;
+  margin: 11.3px 0px 0px -350px;
+  /* padding: 102px 421px 224px 100px; */
+}
+
+.customerbtns {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.tenantbtn {
+  /* width: 176px; */
+  height: 61px;
+  flex-grow: 0;
+  margin: 0 100px 0 0;
+  padding: 13px 40px 14px;
+  border: solid 1px #fff;
+  background-color: rgba(217, 217, 217, 0);
+}
+
+.tenant {
+  /* width: 96px; */
+  height: 34px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.ownersbtn {
+  /* width: 176px; */
+  height: 61px;
+  flex-grow: 0;
+  margin: 0 0 0 100px;
+  padding: 13px 44px 14px 40px;
+  background-color: rgba(217, 217, 217, 0);
+}
+
+.owners {
+  /* width: 92px; */
+  height: 34px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.searchbar {
+  position: relative;
+  width: 0px;
+}
+
+.search {
+  position: relative;
+  /* width: 885px; */
+  height: 65px;
+  flex-grow: 0;
+  margin: 61px 0 0;
+  padding: 11px 17px 12px 33px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
