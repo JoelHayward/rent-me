@@ -3,7 +3,7 @@ import classes from "./Card.module.css";
 
 function Card(props) {
   return (
-    <div className={classes.card} key={props.key}>
+    <div className={classes.card} key={props.resultkey}>
       <div className={classes.imgDiv}>
         <img
           alt="property"
