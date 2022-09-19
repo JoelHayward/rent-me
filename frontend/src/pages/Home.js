@@ -221,7 +221,6 @@ With many years of property management experience and our award-winning attitude
 </div>
       </div>
 {/* TESTIMONIALS */}
-
     </div>
   );
 }
