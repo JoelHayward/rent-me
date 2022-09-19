@@ -19,9 +19,9 @@
   display: flex;
 }
 
-.Logo {
-  /* margin: 25px 665px 18.5px 0; */
-}
+/* .Logo {
+  margin: 25px 665px 18.5px 0;
+} */
 
 .homebtn {
   /* margin: 0 0 0 665px; */
@@ -561,7 +561,7 @@ background-color: #b6d8f1;
 .ourMission {
   display: flex;
   gap: 50px;
-  /* width: 1728px; */
+  width: 100vw;
   height: 810px;
   flex-grow: 0;
   margin: 0px 0 0;
@@ -701,9 +701,9 @@ background-color: #b6d8f1;
   display: flex;
   flex-direction: column;
   width: 1724px;
-  height: 455px;
+  /* height: 455px; */
   margin: 180px 4px 0 0;
-  padding: 78px 291px 44px 60px;
+  padding: 78px 100px 44px 60px;
   background-color: #f9fafb;
 }
 
@@ -751,4 +751,296 @@ background-color: #b6d8f1;
   flex-grow: 0;
   margin: 50px 17.3px 0 0;
   /* border: solid 4px #000; */
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  /* width: 1728px; */
+  height: 1005px;
+  flex-grow: 0;
+  margin: 455px 0 75px;
+  padding: 128px 58px 122px;
+  background-color: #fff;
+}
+
+.othersSay {
+  /* width: 486px; */
+  height: 48px;
+  flex-grow: 0;
+  margin: 0 563px 75px;
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testimonialControl {
+  display: flex;
+}
+
+/* TESTIMONIAL ONE */
+
+.testimonialOne {
+  width: 484px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.testImgOne {
+  width: 314px;
+  height: 314px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testOneName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testOneName .testOneLocation {
+  font-weight: bold;
+}
+
+.testOneLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testOneQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* TESTIMONIAL TWO */
+
+.testimonialTwo {
+  width: 484px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.testImgTwo {
+  width: 314px;
+  height: 314px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testTwoName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testTwoName .testTwoLocation {
+  font-weight: bold;
+}
+
+.testTwoLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testTwoQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* TESTIMONIAL THREE */
+
+.testimonialThree{
+  width: 484px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.testImgThree {
+  width: 314px;
+  height: 314px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testThreeName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testThreeName .testThreeLocation {
+  font-weight: bold;
+}
+
+.testThreeLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testThreeQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* SECTION SIX  */
+
+.letterImg {
+  width: 100vw;
+  height: 334px;
+  flex-grow: 0;
+  /* margin: 0 856px 0 0; */
+}
+
+/* SECTION SEVEN CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 818px;
+  flex-grow: 0;
+  margin: 10px 0 35px 1px;
+  padding: 0 0 195px;
+  background-color: #fff;
+}
+
+.callUs {
+  /* width: 1301px; */
+  height: 48px;
+  flex-grow: 0;
+  margin: 0 0 35px;
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.callUs .phoneNumber {
+  color: #e73336;
+}
+
+.weSpeak {
+  /* width: 1067px; */
+  height: 40px;
+  flex-grow: 0;
+  margin: 35px 117px 0;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* FOOTER SECTION EIGHT */
+
+.footer {
+  width: 1727px;
+  height: 383px;
+  flex-grow: 0;
+  margin: 35px 0 0 1px;
+  padding: 34px 57px 36.8px 60px;
+  background-color: #fff;
+}
+
+.logoFooter {
+  width: 196px;
+  height: 53px;
+  flex-grow: 0;
+  margin: 0 478px 25px 0;
 }

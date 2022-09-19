@@ -5,6 +5,7 @@ import logo from "../images/Logo.png";
 import hero from "../images/Hero.png";
 import family from "../images/familyImg.png";
 import workingTogether from "../images/workingTogether.png";
+import letters from "../images/letters.png";
 import carry from "../images/icons/carry.svg";
 import calculator from "../images/icons/calculator.svg";
 import magHouse from "../images/icons/magHouse.svg";
@@ -169,11 +170,11 @@ export default function Home() {
           </span>
         </div>
         <div className={home.missionImage}>
-          <img classname={home.familyImg} src={family} alt="happy family"></img>
+          <img className={home.familyImg} src={family} alt="happy family"></img>
         </div>
       </div>
       {/* WORKING WITH US SECTION FOUR  */}
-      <div class={home.workingClosely}>
+      <div className={home.workingClosely}>
         <div className={home.workingTogether}>
           <img
             className={home.workingCloselyImg}
@@ -206,21 +207,97 @@ export default function Home() {
       </div>
       {/* TENANT SUPPORT SECTION FIVE */}
       <div className={home.support}>
-      <span className={home.tenantSupport}>
-  Tenant Support
-</span>
-<span className={home.onCall}>
-  Call on us whenever you need support with any issues that arise during your tenancy.
-
-With many years of property management experience and our award-winning attitude, you’re in safe hands.<br></br>
-
-</span>
-<div>
-<span className={home.seeYourself}>See for yourself</span>
-<img className={home.seeBelow} src={downArrow} alt="arrow pointing down"></img>
-</div>
+        <span className={home.tenantSupport}>Tenant Support</span>
+        <span className={home.onCall}>
+          Call on us whenever you need support with any issues that arise during
+          your tenancy. With many years of property management experience and
+          our award-winning attitude, you’re in safe hands.<br></br>
+        </span>
+        <div>
+          <span className={home.seeYourself}>See for yourself</span>
+          <img
+            className={home.seeBelow}
+            src={downArrow}
+            alt="arrow pointing down"
+          ></img>
+        </div>
       </div>
-{/* TESTIMONIALS */}
+      {/* TESTIMONIALS */}
+
+      <div className={home.testimonials}>
+        <span className={home.othersSay}>See What Others Have to Say</span>
+        <div className={home.testimonialControl}>
+          <div className={home.testimonialOne}>
+            <div className={home.testImgOne}></div>
+            <span className={home.testOneName}>
+              <span className={home.testOneLocation}>Name</span>
+              City, Country
+            </span>
+            <div className={home.testOneLine}></div>
+            <span className={home.testOneQuote}>
+              “Quote, ergawgsrbse. wegv awegfsghthdth herhdbths srehsrth
+              drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
+            </span>
+          </div>
+        
+        <div className={home.testimonialTwo}>
+          <div className={home.testImgTwo}></div>
+          <span className={home.testTwoName}>
+            <span className={home.testTwoLocation}>Name</span>
+            City, Country
+          </span>
+          <div className={home.testTwoLine}></div>
+          <span className={home.testTwoQuote}>
+            “Quote, ergawgsrbse. wegv awegfsghthdth herhdbths srehsrth
+            drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
+          </span>
+        </div>
+        <div className={home.testimonialThree}>
+          <div className={home.testImgThree}></div>
+          <span className={home.testThreeName}>
+            <span className={home.testThreeLocation}>Name</span>
+            City, Country
+          </span>
+          <div className={home.testThreeLine}></div>
+          <span className={home.testThreeQuote}>
+            “Quote, ergawgsrbse. wegv awegfsghthdth herhdbths srehsrth
+            drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
+          </span>
+        </div>
+        </div>
+      </div>
+{/* SECTION SIX - BREAK IMAGE */}
+
+<img className={home.letterImg} src={letters} alt="magnet letters"></img>
+{/* CONTACT SECTION SEVEN */}
+
+<div className={home.contact}>
+<span className={home.callUs}>
+  Still can’t find what you’re looking for? Give us a call on
+  <span className={home.phoneNumber}>+64 9 391 4642</span>
+</span>
+<span className={home.weSpeak}>
+  We speak: English, Hungarian, Chinese, Japanese, Persian, Korean, Kiwi
+</span>
+</div>
+{/* FOOTER - SECTION EIGHT */}
+
+<div className={home.footer}>
+<div>
+<img className={logoFooter} src={logo} alt="logo in the footer"></img>
+</div>
+<div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+
+</div>
+
+
+
+
     </div>
   );
 }
