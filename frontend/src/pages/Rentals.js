@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Card from "../components/Card/Card";
 
 export default function Rentals() {
-  const [results, setResults] = useState();
+  const [results, setResults] = useState([]);
 
   useEffect(
     () =>
@@ -17,7 +18,11 @@ export default function Rentals() {
     []
   );
   console.log(results);
-//Use Quick Sort on the fetched properties array
+  // console.log(typeof (results));
+  // console.log(results.length);
+  // console.log(results[0].name);
+
+  // Use Quick Sort on the fetched properties array
   // const quickSort = (array) => {
   //   if (array.length === 1) {
   //     return array;
@@ -51,18 +56,27 @@ export default function Rentals() {
       <Link to="/">Home</Link>
       {results &&
         results.map((result, index) => (
-          <div key={`${result._id}-${result.name}`} className="lisitng-title">
-            <div>
-              <img
-                className="student_avatar"
-                src={result.images.picture_url}
-                alt="Student Avatar"
-              />
-            </div>
-            <div>{result.name}</div>
-            <div className="listing-summary">{result.summary}</div>
-            {/* <div className="listing-price">{result.price}</div> */}
-          </div>
+          // <div key={`${result._id}-${result.name}`} className="lisitng-title">
+          //   <div>
+          //     <img
+          //       className="student_avatar"
+          //       src={result.images.picture_url}
+          //       alt="Student Avatar"
+          //     />
+          //   </div>
+          //   <div>{result.name}</div>
+          //   <div className="listing-summary">{result.summary}</div>
+          //   {/* <div className="listing-price">{result.price}</div> */}
+          // </div>
+          <Card
+            key={`${result._id}-${result.name}`}
+            imageSource={result.images.picture_url}
+            iconSource="images/heart_icon.png"
+            address={`${result.address.street}, ${result.address.suburb}, ${result.address.country_code}`}
+            price={result.price.$numberDecimal}
+            bedrooms={result.bedrooms}
+            bathrooms={parseInt(result.bathrooms.$numberDecimal)}
+          ></Card>
         ))}
     </div>
   );
