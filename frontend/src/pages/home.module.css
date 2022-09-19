@@ -8,16 +8,25 @@
 
 .navbar{
   display: flex;
-  justify-content: space-between;
+  gap: 900px;
   height: 92.7px;
   margin: 0 0 0px 10px;
   /* padding: 0 0 0 30px; */
   background-color: #fff;
 }
 
+.logo {
+  width: 196px;
+  height: 49.1px;
+  margin: 25px 0px 18.5px 0;
+}
+
 .navbtns {
   display: flex;
+  gap: 40px;
 }
+
+
 
 /* .Logo {
   margin: 25px 665px 18.5px 0;
@@ -41,11 +50,19 @@
   color: #000;
 }
 
+.home:hover {
+  color: #e53134;
+}
+
+
 .listingbtn {
+  width: 150px;
   /* margin: 0 172px 0 0; */
   padding: 33px 16px 32.7px 17px;
   background-color: #fff;
+  text-decoration: none;
 }
+
 
 .listings {
   font-family: Inter;
@@ -57,6 +74,11 @@
   letter-spacing: normal;
   text-align: center;
   color: #000;
+  text-decoration: none;
+}
+
+.listings:hover {
+  color: #e53134;
 }
 
 .ownerbtn {
@@ -77,9 +99,14 @@
   color: #000;
 }
 
+.owner:hover {
+  color: #e53134;
+}
+
 .aboutbtn {
+  width: 150px;
   /* margin: 0 0 0 172px; */
-  padding: 33px 32px 32.7px 31px;
+  padding: 33px 32px 32.7px 20px;
   background-color: #fff;
 }
 
@@ -93,6 +120,10 @@
   letter-spacing: normal;
   text-align: center;
   color: #000;
+}
+
+.about:hover {
+  color: #e53134;
 }
 
 .contactbtn {

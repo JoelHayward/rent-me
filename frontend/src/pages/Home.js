@@ -27,9 +27,11 @@ export default function Home() {
           alt="metro property management logo"
         ></img>
         <div className={home.navbtns}>
+        <Link to="/">
           <div className={home.homebtn}>
             <span className={home.home}>Home</span>
           </div>
+          </Link>
           <Link to="/rentals">
             <div className={home.listingbtn}>
               <span className={home.listings}>Rental Listings</span>
