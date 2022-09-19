@@ -11,6 +11,10 @@ import calculator from "../images/icons/calculator.svg";
 import magHouse from "../images/icons/magHouse.svg";
 import houseHeartDocu from "../images/icons/houseHeartDocu.svg";
 import downArrow from "../images/icons/downArrow.svg";
+import linkedIn from "../images/icons/linkedin.svg";
+import instagram from "../images/icons/instagram.svg";
+import facebook from "../images/icons/facebook.svg";
+import twitter from "../images/icons/twitter.svg";
 
 export default function Home() {
   return (
@@ -239,65 +243,95 @@ export default function Home() {
               drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
             </span>
           </div>
-        
-        <div className={home.testimonialTwo}>
-          <div className={home.testImgTwo}></div>
-          <span className={home.testTwoName}>
-            <span className={home.testTwoLocation}>Name</span>
-            City, Country
-          </span>
-          <div className={home.testTwoLine}></div>
-          <span className={home.testTwoQuote}>
-            “Quote, ergawgsrbse. wegv awegfsghthdth herhdbths srehsrth
-            drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
-          </span>
-        </div>
-        <div className={home.testimonialThree}>
-          <div className={home.testImgThree}></div>
-          <span className={home.testThreeName}>
-            <span className={home.testThreeLocation}>Name</span>
-            City, Country
-          </span>
-          <div className={home.testThreeLine}></div>
-          <span className={home.testThreeQuote}>
-            “Quote, ergawgsrbse. wegv awegfsghthdth herhdbths srehsrth
-            drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
-          </span>
-        </div>
+
+          <div className={home.testimonialTwo}>
+            <div className={home.testImgTwo}></div>
+            <span className={home.testTwoName}>
+              <span className={home.testTwoLocation}>Name</span>
+              City, Country
+            </span>
+            <div className={home.testTwoLine}></div>
+            <span className={home.testTwoQuote}>
+              “Quote, ergawgsrbse. wegv awegfsghthdth herhdbths srehsrth
+              drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
+            </span>
+          </div>
+          <div className={home.testimonialThree}>
+            <div className={home.testImgThree}></div>
+            <span className={home.testThreeName}>
+              <span className={home.testThreeLocation}>Name</span>
+              City, Country
+            </span>
+            <div className={home.testThreeLine}></div>
+            <span className={home.testThreeQuote}>
+              “Quote, ergawgsrbse. wegv awegfsghthdth herhdbths srehsrth
+              drthsrthsrhsrjh ihrgj odrgjk ishg ohrlghbiusnrugnldg i;hsgl g s”
+            </span>
+          </div>
         </div>
       </div>
-{/* SECTION SIX - BREAK IMAGE */}
+      {/* SECTION SIX - BREAK IMAGE */}
 
-<img className={home.letterImg} src={letters} alt="magnet letters"></img>
-{/* CONTACT SECTION SEVEN */}
+      <img className={home.letterImg} src={letters} alt="magnet letters"></img>
+      {/* CONTACT SECTION SEVEN */}
 
-<div className={home.contact}>
-<span className={home.callUs}>
-  Still can’t find what you’re looking for? Give us a call on
-  <span className={home.phoneNumber}>+64 9 391 4642</span>
-</span>
-<span className={home.weSpeak}>
-  We speak: English, Hungarian, Chinese, Japanese, Persian, Korean, Kiwi
-</span>
-</div>
-{/* FOOTER - SECTION EIGHT */}
+      <div className={home.contact}>
+        <span className={home.callUs}>
+          Still can’t find what you’re looking for? Give us a call on
+          <span className={home.phoneNumber}>+64 9 391 4642</span>
+        </span>
+        <span className={home.weSpeak}>
+          We speak: English, Hungarian, Chinese, Japanese, Persian, Korean, Kiwi
+        </span>
+      </div>
+      {/* FOOTER - SECTION EIGHT */}
 
-<div className={home.footer}>
-<div>
-<img className={logoFooter} src={logo} alt="logo in the footer"></img>
-</div>
-<div>
-<div></div>
-<div></div>
-<div></div>
-</div>
+      <div className={home.footer}>
+        <div>
+          <img
+            className={home.logoFooter}
+            src={logo}
+            alt="logo in the footer"
+          ></img>
+        </div>
 
-
-</div>
-
-
-
-
+        <div className={home.footerRow}>
+          <div className={home.address}>
+            <span className={home.businessAddress}>
+              Level 17, PWC Building Commercial Bay Tower, 11-19 Customs Street
+              West, Auckland CBD 1010, New Zealand
+            </span>
+            <span className={home.poBox}>
+              P.O. Box 106500, Customs Street, AUCKLAND 1010, NEW ZEALAND
+            </span>
+          </div>
+          <div className={home.newsletter}>
+            <span className={home.subscribe}>Subscribe to our Newsletter</span>
+            <input className={home.subscribeInput} placeholder='Email'></input>
+            <button className={home.subscribebtn}>Subscribe</button>
+          </div>
+          <div className={home.contactBox}>
+            <span className={home.contactInfo}>
+              Phone: 09 391 4642 <br></br>International: +64 21 642 119 <br></br>Email:
+              info@metronz.co.nz
+            </span>
+            <div className={home.socialLinks}>
+              <a href="https://www.linkedin.com/login"target="_blank">
+              <img className={home.linkedIn} src={linkedIn} alt="LinkedIn link"></img>
+              </a>
+              <a href="https://www.instagram.com/"target="_blank">
+              <img className={home.instagram} src={instagram} alt="instagram link"></img>
+              </a>
+              <a href="https://www.facebook.com/"target="_blank">
+              <img className={home.facebook} src={facebook} alt="facebook link"></img>
+              </a>
+              <a href="https://twitter.com/home"target="_blank">
+              <img className={home.twitter} src={twitter} alt="twitter link"></img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
