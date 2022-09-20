@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "../components/Card/Card";
 import classes from './Rentals.module.css';
+import FilterBar from "../components/FilterBar/FilterBar";
 
 export default function Rentals() {
   const [results, setResults] = useState([]);
@@ -55,6 +56,7 @@ export default function Rentals() {
     <div className={classes.rentals}>
       <h1>rentals</h1>
       <Link to="/">Home</Link>
+      <FilterBar></FilterBar>
       <div className={classes.contentDiv}>
         {results &&
           results.map((result, index) => (
@@ -74,6 +76,7 @@ export default function Rentals() {
               key={`${result._id}-${result.name}`}
               imageSource={result.images.picture_url}
               iconSource="images/heart_icon.png"
+              redIconSource="images/heart_icon_red.png"
               address={`${result.address.street}, ${result.address.suburb}, ${result.address.country_code}`}
               price={result.price.$numberDecimal}
               bedrooms={result.bedrooms}

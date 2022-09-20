@@ -27,13 +27,16 @@
     height: 100%;
 }
 
-.icon {
+.icon, .redIcon {
     max-width: 8%;
     position:absolute;
     top: 25px;
     right: 25px;
 }
 
+.redIcon {
+    display: none;
+}
 .details {
     display: flex;
     flex-direction: column;
@@ -52,10 +55,11 @@
 .price {
     font-weight: bolder;
     text-align: left;
+    padding-top: 5px;
 }
 
 .horizontalLine {
-    width: 80%;
+    width: 100%;
     border: 1px solid lightgray;
     border-top: none;
     border-right: none;
