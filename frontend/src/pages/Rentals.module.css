@@ -1,0 +1,16 @@
+.rentals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.contentDiv {
+    display: flex;
+    flex-flow: wrap;
+    /* border: 2px solid black; */
+    max-width: 90%;
+    justify-content: center;
+    gap: 50px;
+}
