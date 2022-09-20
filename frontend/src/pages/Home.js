@@ -17,6 +17,27 @@ import facebook from "../images/icons/facebook.svg";
 import twitter from "../images/icons/twitter.svg";
 
 export default function Home() {
+  let [firstNumber, setFirstNumber] = useState(0);
+  let [secondNumber, setSecondNumber] = useState(0);
+  let [thirdNumber, setThirdNumber] = useState(0);
+  let [result, setResult] = useState(0);
+
+  const changeFirstNumber = (e) => {
+    setFirstNumber(+e.target.value);
+  };
+
+  const changeSecondNumber = (e) => {
+    setSecondNumber(+e.target.value);
+  };
+
+  const changeThirdNumber = (e) => {
+    setThirdNumber(+e.target.value);
+  };
+
+  useEffect(() => {
+    setResult(firstNumber - secondNumber - thirdNumber);
+  }, [firstNumber, secondNumber, thirdNumber, result]);
+
   return (
     <div className={home.homePage}>
       {/* Navbar */}
@@ -27,10 +48,10 @@ export default function Home() {
           alt="metro property management logo"
         ></img>
         <div className={home.navbtns}>
-        <Link to="/">
-          <div className={home.homebtn}>
-            <span className={home.home}>Home</span>
-          </div>
+          <Link to="/">
+            <div className={home.homebtn}>
+              <span className={home.home}>Home</span>
+            </div>
           </Link>
           <Link to="/rentals">
             <div className={home.listingbtn}>
@@ -128,26 +149,44 @@ export default function Home() {
           <span className={home.netIncome}>Enter your weekly net income</span>
           <div className={home.inputExpenditure}>
             <span className={home.dollarSign}>$</span>
-            <input className={home.inputField} type="number"></input>
+            <input
+              className={home.inputField}
+              type="number"
+              value={firstNumber}
+              step="any"
+              onChange={(e) => changeFirstNumber(e)}
+            ></input>
           </div>
           <span className={home.savingGoal}>
             Enter your weekly savings goal
           </span>
           <div className={home.inputExpenditure}>
             <span className={home.dollarSign}>$</span>
-            <input className={home.inputField} type="number"></input>
+            <input
+              className={home.inputField}
+              type="number"
+              value={secondNumber}
+              step="any"
+              onChange={(e) => changeSecondNumber(e)}
+            ></input>
           </div>
           <span className={home.expenditure}>
             Enter your weekly expenditures
           </span>
           <div className={home.inputExpenditure}>
             <span className={home.dollarSign}>$</span>
-            <input className={home.inputField} type="number"></input>
+            <input
+              className={home.inputField}
+              type="number"
+              value={thirdNumber}
+              step="any"
+              onChange={(e) => changeThirdNumber(e)}
+            ></input>
           </div>
           <span className={home.calcSubTitle}>Your Affordable Weekly Rent</span>
           <div className={home.calculateCost}>
             <span className={home.calcCost}>$</span>
-            <span className={home.costOutcome} readOnly />
+            <span className={home.costOutcome}>{result}</span>
           </div>
           <div className={home.centerBtn}>
             <button className={home.calculateBtn}>
@@ -309,26 +348,42 @@ export default function Home() {
           </div>
           <div className={home.newsletter}>
             <span className={home.subscribe}>Subscribe to our Newsletter</span>
-            <input className={home.subscribeInput} placeholder='Email'></input>
+            <input className={home.subscribeInput} placeholder="Email"></input>
             <button className={home.subscribebtn}>Subscribe</button>
           </div>
           <div className={home.contactBox}>
             <span className={home.contactInfo}>
-              Phone: 09 391 4642 <br></br>International: +64 21 642 119 <br></br>Email:
-              info@metronz.co.nz
+              Phone: 09 391 4642 <br></br>International: +64 21 642 119{" "}
+              <br></br>Email: info@metronz.co.nz
             </span>
             <div className={home.socialLinks}>
-              <a href="https://www.linkedin.com/login"target="_blank">
-              <img className={home.linkedIn} src={linkedIn} alt="LinkedIn link"></img>
+              <a href="https://www.linkedin.com/login" target="_blank">
+                <img
+                  className={home.linkedIn}
+                  src={linkedIn}
+                  alt="LinkedIn link"
+                ></img>
               </a>
-              <a href="https://www.instagram.com/"target="_blank">
-              <img className={home.instagram} src={instagram} alt="instagram link"></img>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  className={home.instagram}
+                  src={instagram}
+                  alt="instagram link"
+                ></img>
               </a>
-              <a href="https://www.facebook.com/"target="_blank">
-              <img className={home.facebook} src={facebook} alt="facebook link"></img>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  className={home.facebook}
+                  src={facebook}
+                  alt="facebook link"
+                ></img>
               </a>
-              <a href="https://twitter.com/home"target="_blank">
-              <img className={home.twitter} src={twitter} alt="twitter link"></img>
+              <a href="https://twitter.com/home" target="_blank">
+                <img
+                  className={home.twitter}
+                  src={twitter}
+                  alt="twitter link"
+                ></img>
               </a>
             </div>
           </div>

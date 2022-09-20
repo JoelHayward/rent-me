@@ -223,9 +223,7 @@ margin-top: 150px;
   color: #fff;
 }
 
-/* .searchbar {
-  position: relative;
-} */
+
 
 .search {
   position: relative;
@@ -485,11 +483,13 @@ margin-top: 150px;
   height: 63px;
   flex-grow: 0;
   /* margin: 19px 0 0; */
-  padding: 0px 10px 16px 38px;
+  padding: 10px 10px 16px 38px;
   border-radius: 50px;
   background-color: #f3f4f6;
   border: none;
 }
+
+
 .inputField:focus {
 outline: none;
 }
@@ -507,7 +507,7 @@ outline: none;
   background-color: #f3f4f6;
 }
 
-
+/* 
 .inputExpenditure::placeholder {
   font-family: Inter;
   font-size: 22px;
@@ -518,7 +518,7 @@ outline: none;
   letter-spacing: normal;
   text-align: left;
   color: #000;
-}
+} */
 
 .calcSubTitle {
   width: 365px;
@@ -560,6 +560,7 @@ outline: none;
 .costOutcome {
 border: none;
 background-color: #b6d8f1;
+margin-top: 10px;
 }
 .costOutcome::selection {
 border: none;
