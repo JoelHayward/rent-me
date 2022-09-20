@@ -11,17 +11,17 @@ function Card(props) {
           src={props.imageSource}
         ></img>
         <img alt="icon" className={classes.icon} src={props.iconSource}></img>
-          </div>
-          <div className={classes.details}>
-              <div className={classes.address}>{props.address}</div>
-              <div className={classes.price}>${props.price}</div>
-              <hr className={classes.horzontalLine}></hr>
-              <div className={classes.facilities}>
-                  <div className={classes.bedrooms}>{props.bedrooms} Bed</div>
-                  <div className={classes.bathrooms}>{props.bathrooms} Bath</div>
-                  <div className={classes.cars}>{props.cars} Car</div>
-              </div>
-          </div>
+      </div>
+      <div className={classes.details}>
+        <div className={classes.address}>{props.address}</div>
+        <div className={classes.price}>${props.price}</div>
+        <hr className={classes.horizontalLine}></hr>
+        <div className={classes.facilities}>
+          <div className={classes.bedrooms}>{props.bedrooms} Bed</div>
+          <div className={classes.bathrooms}>{props.bathrooms} Bath</div>
+          <div className={classes.cars}>{props.cars} Car</div>
+        </div>
+      </div>
     </div>
   );
 }
