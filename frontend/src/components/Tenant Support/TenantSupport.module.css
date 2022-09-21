@@ -1,0 +1,56 @@
+
+ .support {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  /* height: 455px; */
+  margin: 180px 4px 0 0;
+  padding: 78px 100px 44px 60px;
+  background-color: #f9fafb;
+}
+
+.tenantSupport {
+  width: 244px;
+  height: 39px;
+  flex-grow: 0;
+  margin: 0 138px 48px 0;
+  /* transform: rotate(-180deg); */
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.onCall {
+  width: 1373px;
+  height: 200px;
+  flex-grow: 0;
+  margin: 48px 0 22px;
+  /* transform: rotate(-180deg); */
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.onCall .seeYourself {
+  font-weight: bold;
+  
+}
+.seeBelow {
+  width: 50px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 50px 17.3px 0 0;
+  /* border: solid 4px #000; */
+}

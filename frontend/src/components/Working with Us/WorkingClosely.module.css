@@ -1,0 +1,62 @@
+.workingClosely {
+  display: flex;
+}
+
+.workingCloselyImg {
+  width: 542px;
+  height: 625px;
+  margin: 40px 83px 0 50px;
+}
+
+.workingCloselyText {
+  display: flex;
+  flex-direction: column;
+}
+
+.workingWithYou {
+  width: 399px;
+  height: 39px;
+  flex-grow: 0;
+  margin: 60px 584px 48px 0;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.atHome {
+  width: 983px;
+  /* height: 320px; */
+  flex-grow: 0;
+  margin: 30px 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.loveIt {
+  width: 951px;
+  height: 31px;
+  flex-grow: 0;
+  margin: 48px 32px 0 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}

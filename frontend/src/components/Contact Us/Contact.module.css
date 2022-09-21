@@ -1,0 +1,49 @@
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*  width: 100vw; */
+   height: 650px; 
+  flex-grow: 0;
+  margin: 10px 0 0px 1px;
+  padding: 0 0 195px;
+  background-color: #fff;
+}
+
+.callUs {
+  /* width: 1301px; */
+  height: 48px;
+  flex-grow: 0;
+  margin: 0 0 35px;
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.callUs .phoneNumber {
+  color: #e73336;
+}
+
+.weSpeak {
+  /* width: 1067px; */
+  height: 40px;
+  flex-grow: 0;
+  margin: 35px 117px 0;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}

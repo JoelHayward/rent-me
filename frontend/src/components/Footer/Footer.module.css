@@ -1,0 +1,186 @@
+
+.footer {
+  width: 1727px;
+  height: 383px;
+  flex-grow: 0;
+  margin: 35px 0 0 1px;
+  padding: 0px 57px 36.8px 60px;
+  background-color: #fff;
+}
+
+.logoFooter {
+  display: flex;
+  width: 196px;
+  height: 53px;
+  flex-grow: 0;
+  margin: 0 0px 50px 0;
+}
+
+.footerRow {
+  display: flex;
+  gap: 40px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.businessAddress {
+  /* width: 572px; */
+  height: 124px;
+  flex-grow: 0;
+  margin: 0 0 29px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.poBox {
+  /* width: 457px; */
+  height: 62px;
+  flex-grow: 0;
+  margin: 29px 115px 0 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px 0px 50px;
+}
+
+.subscribe {
+  /* width: 357px; */
+  height: 31px;
+  flex-grow: 0;
+  margin: 0 85px 25px 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.subscribeInput {
+  /* width: 442px; */
+  height: 50px;
+  flex-grow: 0;
+  margin: 25px 0 0;
+  padding: 10px 200px 5px 12.1px;
+  border-radius: 10px;
+  background-color: #e5e7eb;
+  border: none;
+}
+
+.subscribeInput::placeholder {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: grey;
+}
+
+.subscribebtn {
+  /* width: 178px; */
+  height: 61px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 385px 45.2px 0px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 2px #e53134;
+  background-color: #e73336;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo {
+  width: 368px;
+  height: 93px;
+  flex-grow: 0;
+  margin: 25px 0 35px 126px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.socialLinks {
+  display: flex;
+justify-content: flex-end;
+}
+
+.linkedIn {
+  width: 50px;
+  height: 50px;
+  padding: 10px 0px 20.4px 5px;
+  /* background-color: #000; */
+}
+
+.instagram {
+  width: 65.7px;
+  height: 65.7px;
+  padding: 5px 0px 20.4px 5px;
+  /* background-color: #000; */
+}
+
+.facebook {
+  width: 60px;
+  height: 60px;
+  padding: 5px 0px 20.4px 5px;
+  /* background-color: #000; */
+}
+
+.twitter {
+  width: 68px;
+  height: 68px;
+  flex-grow: 0;
+  padding: 0px 40px 20.4px 10px;
+  /* background-color: #000; */
+}

@@ -1,0 +1,6 @@
+.letterImg {
+  width: 100vw;
+  height: 334px;
+  flex-grow: 0;
+  /* margin: 0 856px 0 0; */
+}

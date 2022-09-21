@@ -1,0 +1,350 @@
+/* SITE INFO AND CALCULATOR */
+
+.infoCalc {
+  display: flex;
+  margin-top: 650px;
+}
+
+.siteInfo {
+  display: flex;
+  /* justify-content: center; */
+  width: 863px;
+  height: 1037px;
+  flex-grow: 0;
+  margin: 2px 0 0 1px;
+  padding: 80px 53px 0px 65px;
+  background-color: #fff;
+}
+/* ICONS FOR THE SITE INFORMATION */
+
+.siteInfoIcons {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.checkBoard {
+  width: 87.9px;
+  height: 97.1px;
+  padding: 21.8px 21.3px 51.8px 20px;
+  /* background-color: #000; */
+}
+
+.magRedHouse {
+  width: 90px;
+  height: 90px;
+  flex-grow: 0;
+  margin: 0 48.8px 0 0;
+  padding: 21.8px 21.3px 51.8px 20px;
+  /* transform: rotate(180deg); */
+  /* background-color: #000; */
+}
+
+.houseRedHeart {
+  width: 101.9px;
+  height: 93.7px;
+  flex-grow: 0;
+  margin: 0 6.1px 0 0;
+  padding: 36px 30.6px 20.4px;
+  /* background-color: #000; */
+}
+
+.docuCheck {
+  width: 45px;
+  height: 52.5px;
+  flex-grow: 0;
+  margin: 35.8px 0 5.4px 0px;
+  padding: 24.1px 40px 35.8px 20px;
+  /* background-color: #000; */
+}
+
+.menCarry {
+  width: 90px;
+  height: 90px;
+  flex-grow: 0;
+  margin: 0 57px 0 0;
+  padding: 24.1px 40px 35.8px 20px;
+  /* background-color: #000; */
+}
+
+/* SITE INFO TEXT */
+
+.siteInfoText {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.onlineCalcInfo {
+  width: 561px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 15px 0 16px 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.searchHomes{
+  width: 547.3px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 22px 0 22px 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  color: #e73336;
+}
+
+.searchHomes .searchRentals {
+  font-weight: normal;
+  color: #000;
+}
+
+.shareFavourites {
+  width: 561px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 15px 0 0 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.agreements {
+  width: 561px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 8px 0 8px 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+
+/* RIGHT SIDE CALCULATOR */
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 645px;
+  height: 913px;
+  padding: 26px 41px 34px 98px;
+  border-radius: 10px;
+  background-color: #b6d8f1;
+}
+
+.calcTitle {
+  width: 446px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 0 59px 131px 1px;
+  font-family: Lexend;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.savingGoal {
+  width: 333px;
+  height: 27px;
+  margin: 50px 123px 0px 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+
+
+
+.netIncome {
+  width: 318px;
+  height: 27px;
+  margin: 50px 138px 0px 0px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.expenditure {
+  width: 341px;
+  height: 27px;
+  flex-grow: 0;
+  margin: 50px 115px 0px 0px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.dollarSign {
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: lightslategrey;
+  margin-right: 50px;
+}
+
+
+.inputField {
+  width: 456px;
+  height: 63px;
+  flex-grow: 0;
+  /* margin: 19px 0 0; */
+  padding: 10px 10px 16px 38px;
+  border-radius: 50px;
+  background-color: #f3f4f6;
+  border: none;
+}
+
+
+.inputField:focus {
+outline: none;
+}
+
+.inputExpenditure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 456px;
+  height: 63px;
+  flex-grow: 0;
+  margin: 19px 0 0;
+  padding: 16px 10px 16px 38px;
+  border-radius: 50px;
+  background-color: #f3f4f6;
+}
+
+/* 
+.inputExpenditure::placeholder {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+} */
+
+.calcSubTitle {
+  width: 365px;
+  height: 31px;
+  flex-grow: 0;
+  margin: 50px 0 47px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.calculateCost {
+  display: flex;
+  
+}
+
+
+
+.calcCost {
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin-right: 50px;
+}
+
+.costOutcome {
+border: none;
+background-color: #b6d8f1;
+margin-top: 10px;
+}
+.costOutcome::selection {
+border: none;
+background-color: #b6d8f1;
+}
+
+.centerBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.calculateBtn {
+  width: 449px;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+  margin: 80px 57px 0 0;
+  padding: 15px 24px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #e73336;
+}
