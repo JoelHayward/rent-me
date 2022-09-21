@@ -1,0 +1,107 @@
+.filterBar {
+    display: flex;
+    flex-direction: row;
+    min-width: 90%;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 90px;
+    /* border: 1px solid black; */
+}
+
+.filterButtonDiv {
+    background-color: transparent;
+    text-align: justify;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    /* height: 100%; */
+    height: 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+}
+
+.filterButtonDiv img {
+    height: 32px;
+}
+.filteredByListDiv {
+    /* border: 2px dashed brown; */
+    display: flex;
+    align-items: flex-start;
+    height: 40px;
+    width: 80%;
+
+}
+
+.selectedList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    /* height: 100%; */
+    /* border: 2px dotted blue; */
+}
+
+.selectedList > li {
+    /* border: 0.1re solid lightblue; */
+    display: inline-block;
+    margin-left: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:0 5px;
+}
+
+.selectedList >li >div > button {
+height: 100%;
+border: none;
+text-transform: capitalize;
+background-color: transparent;
+}
+
+.selectedList >li > div {
+    color: red;
+    height: 100%;
+    text-transform: capitalize;
+}
+.listItemDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid saddlebrown; */
+}
+.favourites {
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.xDiv {
+    transform: rotate(-45deg);
+    font-size: 2.2rem;
+    cursor: pointer;
+    
+}
+
+
+.heartCounterDiv {
+    position: relative;
+    text-align: center;
+    color: snow;
+    height: 40px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.heartCounterDiv > img {
+    height: 40px;
+}
+.counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}

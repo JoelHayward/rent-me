@@ -1,0 +1,12 @@
+.navBar {
+    display: flex;
+    width: 95%;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    /* overflow: hidden; */
+    background: white;
+    z-index: 1;
+}
