@@ -1,0 +1,212 @@
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex-grow: 0;
+  margin: 200px 0 100px;
+  padding: 128px 58px 122px;
+  background-color: #fff;
+}
+
+.othersSay {
+  
+  height: 48px;
+  flex-grow: 0;
+  margin: 0px 0px 50px 0px;
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testimonialControl {
+  display: flex;
+}
+
+/* TESTIMONIAL ONE */
+
+.testimonialOne {
+  width: 420px;
+  height: 632px;
+  margin: 0 75px 0 85px;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.testImgOne {
+  width: 214px;
+  height: 214px;
+  margin: 0 48px 30px 47px;
+  border-radius: 157px;
+}
+
+.testOneName {
+  /* display: flex; */
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testOneName .testOneLocation {
+  font-weight: bold;
+}
+
+.testOneLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testOneQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* TESTIMONIAL TWO */
+
+.testimonialTwo {
+  width: 420px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.testImgTwo {
+  width: 214px;
+  height: 214px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testTwoName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testTwoName .testTwoLocation {
+  font-weight: bold;
+}
+
+.testTwoLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testTwoQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* TESTIMONIAL THREE */
+
+.testimonialThree{
+  width: 420px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.testImgThree {
+  width: 214px;
+  height: 214px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testThreeName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testThreeName .testThreeLocation {
+  font-weight: bold;
+}
+
+.testThreeLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testThreeQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
