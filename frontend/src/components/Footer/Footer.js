@@ -39,28 +39,28 @@ export default function Footer() {
           <br></br>Email: info@metronz.co.nz
         </span>
         <div className={home.socialLinks}>
-          <a href="https://www.linkedin.com/login" target="_blank">
+          <a href="https://www.linkedin.com/login" target="_blank" rel="noopener">
             <img
               className={home.linkedIn}
               src={linkedIn}
               alt="LinkedIn link"
             ></img>
           </a>
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
             <img
               className={home.instagram}
               src={instagram}
               alt="instagram link"
             ></img>
           </a>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">
             <img
               className={home.facebook}
               src={facebook}
               alt="facebook link"
             ></img>
           </a>
-          <a href="https://twitter.com/home" target="_blank">
+          <a href="https://twitter.com/home" target="_blank" rel="noopener">
             <img
               className={home.twitter}
               src={twitter}
