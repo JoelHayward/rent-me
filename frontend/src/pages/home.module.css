@@ -1,0 +1,1248 @@
+.homePage {
+  /* width: 100vw; */
+  height: 6046px;
+  flex-grow: 0;
+  background-color: #fff;
+}
+
+
+.navbar{
+  display: flex;
+  gap: 900px;
+  height: 92.7px;
+  margin: 0 0 0px 10px;
+  /* padding: 0 0 0 30px; */
+  background-color: #fff;
+}
+
+.logo {
+  width: 196px;
+  height: 49.1px;
+  margin: 25px 0px 18.5px 0;
+}
+
+.navbtns {
+  display: flex;
+  gap: 40px;
+}
+
+
+
+/* .Logo {
+  margin: 25px 665px 18.5px 0;
+} */
+
+.homebtn {
+  /* margin: 0 0 0 665px; */
+  padding: 33px 50px 32.7px 48px;
+  background-color: #fff;
+}
+
+.home {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.home:hover {
+  color: #e53134;
+}
+
+
+.listingbtn {
+  width: 150px;
+  /* margin: 0 172px 0 0; */
+  padding: 33px 16px 32.7px 17px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+
+.listings {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.listings:hover {
+  color: #e53134;
+}
+
+.ownerbtn {
+  /* margin: 1.9px 332px 0 1236px; */
+  padding: 33px 44px 31.3px 47px;
+  background-color: #fff;
+}
+
+.owner {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.owner:hover {
+  color: #e53134;
+}
+
+.aboutbtn {
+  width: 150px;
+  /* margin: 0 0 0 172px; */
+  padding: 33px 32px 32.7px 20px;
+  background-color: #fff;
+}
+
+.about {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.about:hover {
+  color: #e53134;
+}
+
+.contactbtn {
+  padding: 32px 38px 33.7px 39px;
+  background-color: #fff;
+}
+
+.contact {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* HERO BAR */
+.heroBox {
+position: absolute;
+width: 100vw;
+}
+
+
+.herobar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  /* height: 513px; */
+  flex-grow: 0;
+  /* margin: 11.3px 0px 0px -350px; */
+  /* padding: 102px 421px 224px 100px; */
+}
+
+.customerbtns {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 150px;
+}
+
+.tenantbtn {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  height: 61px;
+  flex-grow: 0;
+  margin: 0 100px 0 0;
+  padding: 13px 40px 14px;
+  /* border-bottom: solid 1px #fff; */
+  background-color: rgba(217, 217, 217, 0);
+}
+
+.tenant {
+  /* width: 96px; */
+  height: 34px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.ownersbtn {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  height: 61px;
+  flex-grow: 0;
+  margin: 0 0 0 100px;
+  padding: 13px 44px 14px 40px;
+  background-color: rgba(217, 217, 217, 0);
+}
+
+.owners {
+  /* width: 92px; */
+  height: 34px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+
+
+.search {
+  position: relative;
+  
+  height: 65px;
+  flex-grow: 0;
+  margin: 61px 0 0;
+  padding: 11px 550px 12px 33px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+/* SITE INFO AND CALCULATOR */
+
+.infoCalc {
+  display: flex;
+  margin-top: 650px;
+}
+
+.siteInfo {
+  display: flex;
+  /* justify-content: center; */
+  width: 863px;
+  height: 1037px;
+  flex-grow: 0;
+  margin: 2px 0 0 1px;
+  padding: 80px 53px 0px 65px;
+  background-color: #fff;
+}
+/* ICONS FOR THE SITE INFORMATION */
+
+.siteInfoIcons {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.checkBoard {
+  width: 87.9px;
+  height: 97.1px;
+  padding: 21.8px 21.3px 51.8px 20px;
+  /* background-color: #000; */
+}
+
+.magRedHouse {
+  width: 90px;
+  height: 90px;
+  flex-grow: 0;
+  margin: 0 48.8px 0 0;
+  padding: 21.8px 21.3px 51.8px 20px;
+  /* transform: rotate(180deg); */
+  /* background-color: #000; */
+}
+
+.houseRedHeart {
+  width: 101.9px;
+  height: 93.7px;
+  flex-grow: 0;
+  margin: 0 6.1px 0 0;
+  padding: 36px 30.6px 20.4px;
+  /* background-color: #000; */
+}
+
+.docuCheck {
+  width: 45px;
+  height: 52.5px;
+  flex-grow: 0;
+  margin: 35.8px 0 5.4px 0px;
+  padding: 24.1px 40px 35.8px 20px;
+  /* background-color: #000; */
+}
+
+.menCarry {
+  width: 90px;
+  height: 90px;
+  flex-grow: 0;
+  margin: 0 57px 0 0;
+  padding: 24.1px 40px 35.8px 20px;
+  /* background-color: #000; */
+}
+
+/* SITE INFO TEXT */
+
+.siteInfoText {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.onlineCalcInfo {
+  width: 561px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 15px 0 16px 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.searchHomes{
+  width: 547.3px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 22px 0 22px 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  color: #e73336;
+}
+
+.searchHomes .searchRentals {
+  font-weight: normal;
+  color: #000;
+}
+
+.shareFavourites {
+  width: 561px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 15px 0 0 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.agreements {
+  width: 561px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 8px 0 8px 50px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+
+/* RIGHT SIDE CALCULATOR */
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 645px;
+  height: 913px;
+  padding: 26px 41px 34px 98px;
+  border-radius: 10px;
+  background-color: #b6d8f1;
+}
+
+.calcTitle {
+  width: 446px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 0 59px 131px 1px;
+  font-family: Lexend;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.savingGoal {
+  width: 333px;
+  height: 27px;
+  margin: 50px 123px 0px 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+
+
+
+.netIncome {
+  width: 318px;
+  height: 27px;
+  margin: 50px 138px 0px 0px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.expenditure {
+  width: 341px;
+  height: 27px;
+  flex-grow: 0;
+  margin: 50px 115px 0px 0px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.dollarSign {
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: lightslategrey;
+  margin-right: 50px;
+}
+
+
+.inputField {
+  width: 456px;
+  height: 63px;
+  flex-grow: 0;
+  /* margin: 19px 0 0; */
+  padding: 10px 10px 16px 38px;
+  border-radius: 50px;
+  background-color: #f3f4f6;
+  border: none;
+}
+
+
+.inputField:focus {
+outline: none;
+}
+
+.inputExpenditure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 456px;
+  height: 63px;
+  flex-grow: 0;
+  margin: 19px 0 0;
+  padding: 16px 10px 16px 38px;
+  border-radius: 50px;
+  background-color: #f3f4f6;
+}
+
+/* 
+.inputExpenditure::placeholder {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+} */
+
+.calcSubTitle {
+  width: 365px;
+  height: 31px;
+  flex-grow: 0;
+  margin: 50px 0 47px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.calculateCost {
+  display: flex;
+  
+}
+
+
+
+.calcCost {
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin-right: 50px;
+}
+
+.costOutcome {
+border: none;
+background-color: #b6d8f1;
+margin-top: 10px;
+}
+.costOutcome::selection {
+border: none;
+background-color: #b6d8f1;
+}
+
+.centerBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.calculateBtn {
+  width: 449px;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+  margin: 80px 57px 0 0;
+  padding: 15px 24px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #e73336;
+}
+
+/* OUR MISSION SECTION */
+
+.ourMission {
+  display: flex;
+  gap: 50px;
+  width: 100vw;
+  height: 810px;
+  flex-grow: 0;
+  margin: 0px 0 0;
+  padding: 129px 57px 30px 65px;
+  background-color: #f9fafb;
+}
+
+.missionText {
+  display: flex;
+  flex-direction: column;
+}
+
+.happyTenants {
+  width: 534px;
+  height: 41px;
+  flex-grow: 0;
+  margin: 50PX 176px 48px 0.1px;
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.aboutUs {
+  width: 710.1px;
+  height: 300px;
+  flex-grow: 0;
+  margin: 48px 0 26px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.manyLocations {
+  width: 532px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 0px 178px 0 0.1px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.familyImg {
+  width: 829px;
+  height: 561px;
+  flex-grow: 0;
+  margin: 0 0 0 66.9px;
+}
+
+
+/* WORKING TOGETHER SECTION FOUR */
+
+.workingClosely {
+  display: flex;
+}
+
+.workingCloselyImg {
+  width: 542px;
+  height: 625px;
+  margin: 40px 83px 0 50px;
+}
+
+.workingCloselyText {
+  display: flex;
+  flex-direction: column;
+}
+
+.workingWithYou {
+  width: 399px;
+  height: 39px;
+  flex-grow: 0;
+  margin: 60px 584px 48px 0;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.atHome {
+  width: 983px;
+  /* height: 320px; */
+  flex-grow: 0;
+  margin: 30px 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.loveIt {
+  width: 951px;
+  height: 31px;
+  flex-grow: 0;
+  margin: 48px 32px 0 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+ /* TENANT SUPPORT SECTION FIVE */
+
+ .support {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  /* height: 455px; */
+  margin: 180px 4px 0 0;
+  padding: 78px 100px 44px 60px;
+  background-color: #f9fafb;
+}
+
+.tenantSupport {
+  width: 244px;
+  height: 39px;
+  flex-grow: 0;
+  margin: 0 138px 48px 0;
+  /* transform: rotate(-180deg); */
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.onCall {
+  width: 1373px;
+  height: 200px;
+  flex-grow: 0;
+  margin: 48px 0 22px;
+  /* transform: rotate(-180deg); */
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.onCall .seeYourself {
+  font-weight: bold;
+  
+}
+.seeBelow {
+  width: 50px;
+  height: 80px;
+  flex-grow: 0;
+  margin: 50px 17.3px 0 0;
+  /* border: solid 4px #000; */
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  /* width: 1728px; */
+  height: 1005px;
+  flex-grow: 0;
+  margin: 455px 0 75px;
+  padding: 128px 58px 122px;
+  background-color: #fff;
+}
+
+.othersSay {
+  /* width: 486px; */
+  height: 48px;
+  flex-grow: 0;
+  margin: 0 563px 75px;
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testimonialControl {
+  display: flex;
+}
+
+/* TESTIMONIAL ONE */
+
+.testimonialOne {
+  width: 484px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.testImgOne {
+  width: 314px;
+  height: 314px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testOneName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testOneName .testOneLocation {
+  font-weight: bold;
+}
+
+.testOneLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testOneQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* TESTIMONIAL TWO */
+
+.testimonialTwo {
+  width: 484px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.testImgTwo {
+  width: 314px;
+  height: 314px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testTwoName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testTwoName .testTwoLocation {
+  font-weight: bold;
+}
+
+.testTwoLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testTwoQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* TESTIMONIAL THREE */
+
+.testimonialThree{
+  width: 484px;
+  height: 632px;
+  margin: 0 73px 0 0;
+  padding: 25px 37px 45px 38px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.testImgThree {
+  width: 314px;
+  height: 314px;
+  margin: 0 48px 18px 47px;
+  border-radius: 157px;
+}
+
+.testThreeName {
+  /* width: 409px; */
+  height: 62px;
+  margin: 18px 0 17px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.testThreeName .testThreeLocation {
+  font-weight: bold;
+}
+
+.testThreeLine {
+  /* width: 385px; */
+  height: 1px;
+  margin: 17px 12px 26px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+.testThreeQuote {
+  /* width: 409px; */
+  height: 124px;
+  margin: 26px 0 0;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* SECTION SIX  */
+
+.letterImg {
+  width: 100vw;
+  height: 334px;
+  flex-grow: 0;
+  /* margin: 0 856px 0 0; */
+}
+
+/* SECTION SEVEN CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 818px;
+  flex-grow: 0;
+  margin: 10px 0 0px 1px;
+  padding: 0 0 195px;
+  background-color: #fff;
+}
+
+.callUs {
+  /* width: 1301px; */
+  height: 48px;
+  flex-grow: 0;
+  margin: 0 0 35px;
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.callUs .phoneNumber {
+  color: #e73336;
+}
+
+.weSpeak {
+  /* width: 1067px; */
+  height: 40px;
+  flex-grow: 0;
+  margin: 35px 117px 0;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+/* FOOTER SECTION EIGHT */
+
+.footer {
+  width: 1727px;
+  height: 383px;
+  flex-grow: 0;
+  margin: 35px 0 0 1px;
+  padding: 0px 57px 36.8px 60px;
+  background-color: #fff;
+}
+
+.logoFooter {
+  display: flex;
+  width: 196px;
+  height: 53px;
+  flex-grow: 0;
+  margin: 0 0px 50px 0;
+}
+
+.footerRow {
+  display: flex;
+  gap: 40px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.businessAddress {
+  /* width: 572px; */
+  height: 124px;
+  flex-grow: 0;
+  margin: 0 0 29px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.poBox {
+  /* width: 457px; */
+  height: 62px;
+  flex-grow: 0;
+  margin: 29px 115px 0 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px 0px 50px;
+}
+
+.subscribe {
+  /* width: 357px; */
+  height: 31px;
+  flex-grow: 0;
+  margin: 0 85px 25px 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.subscribeInput {
+  /* width: 442px; */
+  height: 50px;
+  flex-grow: 0;
+  margin: 25px 0 0;
+  padding: 10px 200px 5px 12.1px;
+  border-radius: 10px;
+  background-color: #e5e7eb;
+  border: none;
+}
+
+.subscribeInput::placeholder {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: grey;
+}
+
+.subscribebtn {
+  /* width: 178px; */
+  height: 61px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 385px 45.2px 0px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 2px #e53134;
+  background-color: #e73336;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo {
+  width: 368px;
+  height: 93px;
+  flex-grow: 0;
+  margin: 25px 0 35px 126px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.socialLinks {
+  display: flex;
+justify-content: flex-end;
+}
+
+.linkedIn {
+  width: 50px;
+  height: 50px;
+  padding: 10px 0px 20.4px 5px;
+  /* background-color: #000; */
+}
+
+.instagram {
+  width: 65.7px;
+  height: 65.7px;
+  padding: 5px 0px 20.4px 5px;
+  /* background-color: #000; */
+}
+
+.facebook {
+  width: 60px;
+  height: 60px;
+  padding: 5px 0px 20.4px 5px;
+  /* background-color: #000; */
+}
+
+.twitter {
+  width: 68px;
+  height: 68px;
+  flex-grow: 0;
+  padding: 0px 40px 20.4px 10px;
+  /* background-color: #000; */
+}
