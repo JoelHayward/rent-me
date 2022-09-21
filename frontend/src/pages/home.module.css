@@ -732,7 +732,7 @@ background-color: #b6d8f1;
  .support {
   display: flex;
   flex-direction: column;
-  width: 1724px;
+  width: 100vw;
   /* height: 455px; */
   margin: 180px 4px 0 0;
   padding: 78px 100px 44px 60px;
