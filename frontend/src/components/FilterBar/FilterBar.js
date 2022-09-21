@@ -29,7 +29,16 @@ function FilterBar() {
           ))}
         </ul>
       </div>
-      <div className={classes.favourites}>Favourites</div>
+      <div className={classes.favourites}>
+        <div className={classes.heartCounterDiv}>
+          <img
+            alt="heart counter counts likes"
+            src="./images/heart_icon_red.png"
+          ></img>
+          <div className={classes.counter}>3</div>
+        </div>
+        Favourites
+      </div>
     </div>
   );
 }

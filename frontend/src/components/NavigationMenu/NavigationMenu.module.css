@@ -1,0 +1,15 @@
+.navigationMenuItems {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.navigationMenuItems li {
+    /* border: 0.5 solid lightcyan; */
+    /* outline: 1px solid lightgray; */
+    text-transform: capitalize;
+    margin-left: 30px;
+    cursor: pointer;
+}
