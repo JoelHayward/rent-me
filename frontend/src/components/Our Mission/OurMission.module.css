@@ -1,11 +1,11 @@
 .ourMission {
   display: flex;
   gap: 50px;
-  width: 100vw;
-  height: 810px;
+  /* width: 100vw; */
+  height: 680px;
   flex-grow: 0;
-  margin: 0px 0 0;
-  padding: 129px 57px 30px 65px;
+  /* margin: 0px 0 0; */
+  padding: 120px 0px 30px 50px;
   background-color: #f9fafb;
 }
 

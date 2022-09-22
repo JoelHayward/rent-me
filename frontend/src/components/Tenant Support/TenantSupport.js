@@ -11,8 +11,7 @@ export default function TenantSupport() {
           Call on us whenever you need support with any issues that arise during
           your tenancy. With many years of property management experience and
           our award-winning attitude, you’re in safe hands.<br></br>
-        </span>
-        <div>
+          <div className={home.arrowAdjust}>
           <span className={home.seeYourself}>See for yourself</span>
           <img
             className={home.seeBelow}
@@ -20,6 +19,9 @@ export default function TenantSupport() {
             alt="arrow pointing down"
           ></img>
         </div>
+        
+        </span>
+        
       </div>
   )
 }
