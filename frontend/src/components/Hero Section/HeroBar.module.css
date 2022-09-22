@@ -1,7 +1,7 @@
 /* HERO BAR */
 .heroBox {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   }
   
   
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     /* height: 513px; */
     flex-grow: 0;

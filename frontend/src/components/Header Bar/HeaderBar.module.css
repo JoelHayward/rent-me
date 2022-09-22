@@ -1,8 +1,9 @@
 .navbar{
+  width: 100%;
   display: flex;
-  gap: 900px;
+  justify-content: space-between;
   height: 92.7px;
-  margin: 0 0 0px 10px;
+  /* margin: 0 0 0px 20px; */
   /* padding: 0 0 0 30px; */
   background-color: #fff;
 }
@@ -10,22 +11,16 @@
 .logo {
   width: 196px;
   height: 49.1px;
-  margin: 25px 0px 18.5px 0;
+  margin: 25px 0px 18.5px 40px;
 }
 
 .navbtns {
   display: flex;
-  gap: 40px;
+  /* gap: 40px; */
 }
 
-
-
-/* .Logo {
-  margin: 25px 665px 18.5px 0;
-} */
-
 .homebtn {
-  /* margin: 0 0 0 665px; */
+ 
   padding: 33px 50px 32.7px 48px;
   background-color: #fff;
 }
@@ -39,6 +34,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
+  text-decoration: none;
   color: #000;
 }
 
@@ -96,7 +92,7 @@
 }
 
 .aboutbtn {
-  width: 150px;
+  width: 100px;
   /* margin: 0 0 0 172px; */
   padding: 33px 32px 32.7px 20px;
   background-color: #fff;
@@ -119,7 +115,7 @@
 }
 
 .contactbtn {
-  padding: 32px 38px 33.7px 39px;
+  padding: 32px 36px 33.7px 36px;
   background-color: #fff;
 }
 

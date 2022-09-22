@@ -2,10 +2,10 @@
  .support {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 455px; */
-  margin: 180px 4px 0 0;
-  padding: 78px 100px 44px 60px;
+  margin: 180px 0px 0 0;
+  padding: 78px 0px 44px 50px;
   background-color: #f9fafb;
 }
 

@@ -14,12 +14,12 @@ export default function HeaderBar() {
       alt="metro property management logo"
     ></img>
     <div className={home.navbtns}>
-      <Link to="/">
+      <Link style={{textDecoration: 'none'}} to="/">
         <div className={home.homebtn}>
           <span className={home.home}>Home</span>
         </div>
       </Link>
-      <Link to="/rentals">
+      <Link style={{textDecoration: 'none'}} to="/rentals">
         <div className={home.listingbtn}>
           <span className={home.listings}>Rental Listings</span>
         </div>

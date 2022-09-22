@@ -9,9 +9,9 @@ import home from "./InfoCalc.module.css";
 
 
 export default function InfoCalc() {
-  let [firstNumber, setFirstNumber] = useState(0);
-  let [secondNumber, setSecondNumber] = useState(0);
-  let [thirdNumber, setThirdNumber] = useState(0);
+  let [firstNumber, setFirstNumber] = useState('');
+  let [secondNumber, setSecondNumber] = useState('');
+  let [thirdNumber, setThirdNumber] = useState('');
   let [result, setResult] = useState(0);
 
   const changeFirstNumber = (e) => {
@@ -122,11 +122,13 @@ export default function InfoCalc() {
             <span className={home.calcCost}>$</span>
             <span className={home.costOutcome}>{result}</span>
           </div>
+          <Link style={{textDecoration: 'none'}} to="/rentals">
           <div className={home.centerBtn}>
             <button className={home.calculateBtn}>
               Search Rental Property Listings
             </button>
           </div>
+          </Link>
         </div>
       </div>
   )

@@ -3,16 +3,15 @@
 .infoCalc {
   display: flex;
   margin-top: 650px;
+  gap: 120px;
 }
 
 .siteInfo {
   display: flex;
-  /* justify-content: center; */
-  width: 863px;
   height: 1037px;
   flex-grow: 0;
   margin: 2px 0 0 1px;
-  padding: 80px 53px 0px 65px;
+  padding: 80px 53px 0px 40px;
   background-color: #fff;
 }
 /* ICONS FOR THE SITE INFORMATION */
@@ -152,9 +151,8 @@
 .calculator {
   display: flex;
   flex-direction: column;
-  width: 645px;
   height: 913px;
-  padding: 26px 41px 34px 98px;
+  padding: 26px 41px 34px 50px;
   border-radius: 10px;
   background-color: #b6d8f1;
 }
@@ -189,9 +187,6 @@
   text-align: left;
   color: #000;
 }
-
-
-
 
 .netIncome {
   width: 318px;
@@ -268,19 +263,6 @@ outline: none;
   background-color: #f3f4f6;
 }
 
-/* 
-.inputExpenditure::placeholder {
-  font-family: Inter;
-  font-size: 22px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-} */
-
 .calcSubTitle {
   width: 365px;
   height: 31px;
@@ -321,7 +303,7 @@ outline: none;
 .costOutcome {
 border: none;
 background-color: #b6d8f1;
-margin-top: 10px;
+margin-top: 15px;
 }
 .costOutcome::selection {
 border: none;
