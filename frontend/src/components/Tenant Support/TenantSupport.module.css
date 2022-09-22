@@ -1,9 +1,6 @@
-
- .support {
+.support {
   display: flex;
   flex-direction: column;
-  /* width: 100vw; */
-  /* height: 455px; */
   margin: 180px 0px 0 0;
   padding: 78px 0px 44px 50px;
   background-color: #f9fafb;
@@ -14,7 +11,7 @@
   height: 39px;
   flex-grow: 0;
   margin: 0 138px 48px 0;
-  /* transform: rotate(-180deg); */
+
   font-family: Inter;
   font-size: 32px;
   font-weight: bold;
@@ -27,11 +24,12 @@
 }
 
 .onCall {
+  display: flex;
+  flex-direction: column;
   width: 1373px;
   height: 200px;
   flex-grow: 0;
   margin: 48px 0 22px;
-  /* transform: rotate(-180deg); */
   font-family: Inter;
   font-size: 26px;
   font-weight: normal;
@@ -45,12 +43,17 @@
 
 .onCall .seeYourself {
   font-weight: bold;
-  
 }
+
+.arrowAdjust {
+  display: flex;
+  gap: 20px;
+}
+
 .seeBelow {
   width: 50px;
   height: 80px;
   flex-grow: 0;
-  margin: 50px 17.3px 0 0;
+  margin: 0px 17.3px 0 0;
   /* border: solid 4px #000; */
 }
