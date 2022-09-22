@@ -20,7 +20,7 @@ function FilterBar() {
       <div className={classes.filteredByListDiv}>
         <ul className={classes.selectedList}>
           {selectedItems.map((item) => (
-            <li>
+            <li key={item}>
               <div className={classes.listItemDiv}>
                 <button className={classes.selectedButton}>{item}</button>
                 <div className={classes.xDiv}>+</div>
