@@ -60,6 +60,8 @@ function FilterBar() {
     setValue(newValue);
   };
 
+
+  //SET FILTER
   const [filter, setFilter] = useState([]);
 
   console.log(filter);
