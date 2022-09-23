@@ -10,6 +10,19 @@ import RentalsFooter from "../components/ListingsFooter/RentalsFooter";
 
 export default function Rentals() {
   const [results, setResults] = useState([]);
+  const [favourites, setFavourites] = useState([]);
+  const handleFavour = (e) => {
+    if (e && e.preventDefault) {
+      e.preventDefault();
+      console.log('clicked');
+      console.log(e.target.getAttribute('iconuniqueid'));
+      // setFavourites(favourites.push(e.target.getAttribute('iconuniqueid')));
+      setFavourites([...favourites, e.target.getAttribute('iconuniqueid')]);
+      console.log(favourites);
+    }
+    // console.log('clicked');
+  };
+  // console.log(favourites);
 
   useEffect(
     () =>
@@ -22,7 +35,7 @@ export default function Rentals() {
       },
     []
   );
-  console.log(results);
+  // console.log(results);
   // console.log(typeof (results));
   // console.log(results.length);
   // console.log(results[0].name);
@@ -159,12 +172,12 @@ export default function Rentals() {
       return array;
     }
     const pivot = array[array.length - 1];
-    const pivotValue = pivot.name;
+    const pivotValue = pivot.capital;
     const leftArr = [];
     const rightArr = [];
 
     for (let i = 0; i < array.length - 1; i++) {
-      const arrayValue = array[i].name;
+      const arrayValue = array[i].capital;
       if (arrayValue < pivotValue) {
         leftArr.push(array[i]);
       } else {
@@ -198,20 +211,9 @@ export default function Rentals() {
       <div className={classes.contentDiv}>
         {results &&
           results.map((result, index) => (
-            // <div key={`${result._id}-${result.name}`} className="lisitng-title">
-            //   <div>
-            //     <img
-            //       className="student_avatar"
-            //       src={result.images.picture_url}
-            //       alt="Student Avatar"
-            //     />
-            //   </div>
-            //   <div>{result.name}</div>
-            //   <div className="listing-summary">{result.summary}</div>
-            //   {/* <div className="listing-price">{result.price}</div> */}
-            // </div>
             <Card
               key={`${result._id}-${result.name}`}
+              iconuniqueid={`${result._id}`}
               imageSource={result.images.picture_url}
               iconSource="images/heart_icon.png"
               redIconSource="images/heart_icon_red.png"
@@ -219,6 +221,7 @@ export default function Rentals() {
               price={result.price.$numberDecimal}
               bedrooms={result.bedrooms}
               bathrooms={parseInt(result.bathrooms.$numberDecimal)}
+              onFavour={handleFavour}
             ></Card>
           ))}
       </div>
