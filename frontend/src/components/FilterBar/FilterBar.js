@@ -34,7 +34,7 @@ const style = {
 
 // const selectedItems = [{}]
 
-function FilterBar() {
+function FilterBar(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
