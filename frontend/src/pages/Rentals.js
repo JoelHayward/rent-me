@@ -9,6 +9,8 @@ import RentalsFooter from "../components/ListingsFooter/RentalsFooter";
 export default function Rentals() {
    const [results, setResults] = useState([]);
   const [favourites, setFavourites] = useState([]);
+
+
   const handleFavour = (e) => {
     if (e && e.preventDefault) {
       e.preventDefault();
@@ -111,59 +113,7 @@ export default function Rentals() {
     },
   ];
 
-  // Use Quick Sort on the fetched properties array
-  // const quickSort = (array) => {
-  //   if (array.length === 1) {
-  //     return array;
-  //   }
-  //   const pivot = array[array.length - 1];
-  //   const leftArr = [];
-  //   const rightArr = [];
-
-  //   for (let i = 0; i < array.length - 1; i++) {
-  //     if (array[i] < pivot) {
-  //       leftArr.push(array[i]);
-  //     } else {
-  //       rightArr.push(array[i]);
-  //     }
-  //   }
-
-  //   if (leftArr.length > 0 && rightArr.length > 0) {
-  //     return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
-  //   } else if (leftArr.length > 0) {
-  //     return [...quickSort(leftArr), pivot];
-  //   } else {
-  //     return [pivot, ...quickSort(rightArr)];
-  //   }
-  // };
-
-  // Customised to sort the objectArray on country - working!
-  // const quickSort = (array) => {
-  //   if (array.length === 1) {
-  //     return array;
-  //   }
-  //   const pivot = array[array.length - 1];
-  //   const pivotValue = pivot.country;
-  //   const leftArr = [];
-  //   const rightArr = [];
-
-  //   for (let i = 0; i < array.length - 1; i++) {
-  //     const arrayValue = array[i].country;
-  //     if (arrayValue < pivotValue) {
-  //       leftArr.push(array[i]);
-  //     } else {
-  //       rightArr.push(array[i]);
-  //     }
-  //   }
-
-  //   if (leftArr.length > 0 && rightArr.length > 0) {
-  //     return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
-  //   } else if (leftArr.length > 0) {
-  //     return [...quickSort(leftArr), pivot];
-  //   } else {
-  //     return [pivot, ...quickSort(rightArr)];
-  //   }
-  // };
+  // QUICK SORT FUNCTION
 
   const quickSort = (array) => {
     if (array.length === 1) {
@@ -195,8 +145,12 @@ export default function Rentals() {
   // console.log(quickSort(results));
   // console.log(quickSort(numberArray));
   // console.log(quickSort(stringArray));
-  // console.log(quickSort(objectArray));
+  console.log(quickSort(objectArray));
 
+
+
+
+  
   return (
     <div className={classes.rentals}>
       {/* <h1>rentals</h1> */}
