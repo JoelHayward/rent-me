@@ -9,7 +9,7 @@ const selectedItems = [
   "Pets Allowed",
 ];
 
-function FilterBar() {
+function FilterBar(props) {
   return (
     <div className={classes.filterBar}>
       <div className={classes.filter}>
@@ -35,7 +35,7 @@ function FilterBar() {
             alt="heart counter counts likes"
             src="./images/heart_icon_red.png"
           ></img>
-          <div className={classes.counter}>3</div>
+          <div className={classes.counter}>{props.count}</div>
         </div>
         Favourites
       </div>

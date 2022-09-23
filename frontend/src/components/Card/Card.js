@@ -13,14 +13,20 @@ function Card(props) {
         <img
           alt="icon"
           iconuniqueid={props.iconuniqueid}
-          className={classes.icon}
+          // className={classes.icon + `${props.iconStyle}`}
+          className={props.favoured ? classes.hideIcon : classes.displayIcon}
           src={props.iconSource}
           onClick={props.onFavour}
         ></img>
         <img
+          iconuniqueid={props.iconuniqueid}
           alt="icon"
-          className={classes.redIcon}
+          // className={classes.redIcon}
+          className={
+            props.favoured ? classes.displayRedIcon : classes.hideRedIcon
+          }
           src={props.redIconSource}
+          onClick={props.onFavour}
         ></img>
       </div>
       <div className={classes.details}>

@@ -9,21 +9,6 @@ import NavigationMenu from "../components/NavigationMenu/NavigationMenu";
 import RentalsFooter from "../components/ListingsFooter/RentalsFooter";
 
 export default function Rentals() {
-  const [results, setResults] = useState([]);
-  const [favourites, setFavourites] = useState([]);
-  const handleFavour = (e) => {
-    if (e && e.preventDefault) {
-      e.preventDefault();
-      console.log('clicked');
-      console.log(e.target.getAttribute('iconuniqueid'));
-      // setFavourites(favourites.push(e.target.getAttribute('iconuniqueid')));
-      setFavourites([...favourites, e.target.getAttribute('iconuniqueid')]);
-      console.log(favourites);
-    }
-    // console.log('clicked');
-  };
-  // console.log(favourites);
-
   useEffect(
     () =>
       async function req() {
@@ -35,6 +20,22 @@ export default function Rentals() {
       },
     []
   );
+  const handleFavour = (e) => {
+    if (e && e.preventDefault) {
+      e.preventDefault();
+      const iconID = e.target.getAttribute("iconuniqueid");
+      console.log(iconID);
+      if (favourites.includes(iconID)) {
+        favourites.splice(favourites.indexOf(iconID), 1);
+      } else {
+        setFavourites([...favourites, iconID]);
+      }
+    }
+  };
+  const [results, setResults] = useState([]);
+  const [favourites, setFavourites] = useState([]);
+  const [unfavourites, setUnfavourites] = useState([]);
+
   // console.log(results);
   // console.log(typeof (results));
   // console.log(results.length);
@@ -207,7 +208,7 @@ export default function Rentals() {
         <h1>Rental Property Listings</h1>
       </NavBar>
       {/* <Link to="/">Home</Link> */}
-      <FilterBar></FilterBar>
+      <FilterBar count={favourites.length}></FilterBar>
       <div className={classes.contentDiv}>
         {results &&
           results.map((result, index) => (
@@ -222,6 +223,8 @@ export default function Rentals() {
               bedrooms={result.bedrooms}
               bathrooms={parseInt(result.bathrooms.$numberDecimal)}
               onFavour={handleFavour}
+              // onUnFavour={handleUnFavour}
+              favoured={favourites.includes(result._id)}
             ></Card>
           ))}
       </div>
