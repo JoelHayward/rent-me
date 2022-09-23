@@ -10,8 +10,18 @@ function Card(props) {
           className={classes.image}
           src={props.imageSource}
         ></img>
-        <img alt="icon" className={classes.icon} src={props.iconSource}></img>
-        <img alt="icon" className={classes.redIcon} src={props.redIconSource}></img>
+        <img
+          alt="icon"
+          iconuniqueid={props.iconuniqueid}
+          className={classes.icon}
+          src={props.iconSource}
+          onClick={props.onFavour}
+        ></img>
+        <img
+          alt="icon"
+          className={classes.redIcon}
+          src={props.redIconSource}
+        ></img>
       </div>
       <div className={classes.details}>
         <div className={classes.address}>{props.address}</div>

@@ -38,6 +38,14 @@
 .redIcon {
     display: none;
 }
+
+.displayIcon {
+    display: block;
+}
+.hideIcon {
+    display: none;
+}
+
 .details {
     display: flex;
     flex-direction: column;
