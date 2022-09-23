@@ -77,6 +77,292 @@ function FilterBar(props) {
         <button className={classes.filterButtonDiv} onClick={handleOpen}>
           <img alt="filter button" src="./images/filter.png"></img>Filters
         </button>
+ <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style} textAlign="center">
+            <Typography
+              id="modal-modal-title"
+              variant="h6"
+              component="h2"
+              textAlign="left"
+            >
+              Location
+            </Typography>
+            <FormControl sx={{ m: 1, minWidth: 250 }}>
+              <InputLabel id="demo-simple-select-label">Name</InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={name}
+                label="Name"
+                onChange={handleChangeName}
+              >
+                <MenuItem value={10}>House</MenuItem>
+                <MenuItem value={20}>Appartment</MenuItem>
+                <MenuItem value={30}>Townhouse</MenuItem>
+              </Select>
+            </FormControl>
+            <FormControl sx={{ m: 1, minWidth: 250 }}>
+              <InputLabel id="demo-simple-select-label">District</InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={district}
+                label="District"
+                onChange={handleChangeDistrict}
+              >
+                <MenuItem value={10}>Ten</MenuItem>
+                <MenuItem value={20}>Twenty</MenuItem>
+                <MenuItem value={30}>Thirty</MenuItem>
+              </Select>
+            </FormControl>
+            <FormControl sx={{ m: 1, minWidth: 250 }}>
+              <InputLabel id="demo-simple-select-label">Suburb</InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={suburb}
+                label="Suburb"
+                onChange={handleChangeSuburb}
+              >
+                <MenuItem value={10}>Ten</MenuItem>
+                <MenuItem value={20}>Twenty</MenuItem>
+                <MenuItem value={30}>Thirty</MenuItem>
+              </Select>
+            </FormControl>
+
+            <Typography
+              id="modal-modal-title"
+              variant="h6"
+              component="h2"
+              textAlign="left"
+            >
+              Rent per Week
+            </Typography>
+            <Box sx={{ m: 2, width: 750 }}>
+              <Slider
+                getAriaLabel={() => "Rent perWeek"}
+                value={value}
+                onChange={handleChangeSlider}
+                valueLabelDisplay="auto"
+                getAriaValueText={valuetext}
+              />
+            </Box>
+
+            <Box>
+              <Typography
+                id="modal-modal-title"
+                variant="h6"
+                component="h2"
+                textAlign="left"
+              >
+                Property Type
+              </Typography>
+              <Stack spacing={4} direction="row" sx={{ ml: 8 }}>
+                <Button
+                  variant="outlined"
+                  onClick={() => setFilter([...filter, "House"])}
+                >
+                  House
+                </Button>
+                <Button
+                  variant="outlined"
+                  onClick={() => setFilter([...filter, "Townhouse"])}
+                >
+                  Townhouse
+                </Button>
+                <Button
+                  variant="outlined"
+                  onClick={() => setFilter([...filter, "Apartment"])}
+                >
+                  Apartment
+                </Button>
+                <Button
+                  variant="outlined"
+                  onClick={() => setFilter([...filter, "Unit"])}
+                >
+                  Unit
+                </Button>
+                <Button
+                  variant="outlined"
+                  onClick={() => setFilter([...filter, "Section"])}
+                >
+                  Section
+                </Button>
+              </Stack>
+            </Box>
+
+            <Box sx={{ display: "inline-flex" }}>
+              <Box sx={{ m: 5 }}>
+                <Typography
+                  id="modal-modal-title"
+                  variant="h6"
+                  component="h2"
+                  textAlign="left"
+                >
+                  Bedrooms
+                </Typography>
+                <Stack spacing={1} direction="row">
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "1 Bedrooms"])}
+                  >
+                    1
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "2 Bedrooms"])}
+                  >
+                    2
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "3 Bedrooms"])}
+                  >
+                    3
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "4 Bedrooms"])}
+                  >
+                    
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "5+ Bedrooms"])}
+                  >
+                    5+
+                  </Button>
+                </Stack>
+              </Box>
+
+              <Box sx={{ m: 5 }}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Off-street Carparks
+                </Typography>
+                <Stack spacing={1} direction="row">
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "1 Carpark"])}
+                  >
+                    1
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "2 Carpark"])}
+                  >
+                    2
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "3+ Carpark"])}
+                  >
+                    3+
+                  </Button>
+                </Stack>
+              </Box>
+            </Box>
+
+            <Box sx={{ display: "inline-flex" }}>
+              <Box sx={{ m: 5 }}>
+                <Typography
+                  id="modal-modal-title"
+                  variant="h6"
+                  component="h2"
+                  textAlign="left"
+                >
+                  Bathrooms
+                </Typography>
+                <Stack spacing={1} direction="row">
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "1 Bathroom"])}
+                  >
+                    1
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "2 Bathroom"])}
+                  >
+                    2
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "3 Bathroom"])}
+                  >
+                    3
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "4 Bathroom"])}
+                  >
+                    4
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => setFilter([...filter, "5+ Bathroom"])}
+                  >
+                    5+
+                  </Button>
+                </Stack>
+              </Box>
+
+              <Box sx={{ mt: 9 }}>
+                <Stack spacing={1} direction="row">
+                  <Button
+                    variant="outlined"
+                    style={{ fontSize: "10px" }}
+                    onClick={() => setFilter([...filter, "Furnished"])}
+                  >
+                    Furnished
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    style={{ fontSize: "10px" }}
+                    onClick={() => setFilter([...filter, "Pets Allowed"])}
+                  >
+                    Pets Allowed
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    style={{ fontSize: "10px" }}
+                    onClick={() => setFilter([...filter, "Available Now"])}
+                  >
+                    Available Now
+                  </Button>
+                </Stack>
+              </Box>
+            </Box>
+
+            <Box sx={{ display: "inline-flex" }}>
+              <Box justifyContent="flex-start">
+                <Stack spacing={4} direction="row" sx={{ ml: 8 }}>
+                  <Button variant="text" onClick={handleClose}>
+                    Close
+                  </Button>
+                </Stack>
+              </Box>
+              <Box sx={{ display: "inline-flex", ml: 50 }}>
+                <Box>
+                  <Stack>
+                    <Button variant="text" onClick={clearFilter}>
+                      Reset Filters
+                    </Button>
+                  </Stack>
+                </Box>
+                <Box>
+                  <Stack>
+                    <Button variant="outlined">Search</Button>
+                  </Stack>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Modal>
       </div>
       <div className={classes.filteredByListDiv}>
         <ul className={classes.selectedList}>
