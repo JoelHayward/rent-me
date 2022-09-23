@@ -10,20 +10,6 @@ export default function Rentals() {
    const [results, setResults] = useState([]);
   const [favourites, setFavourites] = useState([]);
 
-
-  const handleFavour = (e) => {
-    if (e && e.preventDefault) {
-      e.preventDefault();
-      console.log('clicked');
-      console.log(e.target.getAttribute('iconuniqueid'));
-      // setFavourites(favourites.push(e.target.getAttribute('iconuniqueid')));
-      setFavourites([...favourites, e.target.getAttribute('iconuniqueid')]);
-      console.log(favourites);
-    }
-    // console.log('clicked');
-  };
-  // console.log(favourites);
-
   useEffect(
     () =>
       async function req() {
@@ -47,10 +33,6 @@ export default function Rentals() {
       }
     }
   };
-  const [results, setResults] = useState([]);
-  const [favourites, setFavourites] = useState([]);
-  const [unfavourites, setUnfavourites] = useState([]);
-
   // console.log(results);
   // console.log(typeof (results));
   // console.log(results.length);
