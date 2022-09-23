@@ -1,15 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "../components/Card/Card";
 import classes from "./Rentals.module.css";
 import FilterBar from "../components/FilterBar/FilterBar";
 import NavBar from "../components/NavBar/NavBar";
-import NavigationMenu from "../components/NavigationMenu/NavigationMenu";
 import RentalsFooter from "../components/ListingsFooter/RentalsFooter";
 
 export default function Rentals() {
-  const [results, setResults] = useState([]);
+   const [results, setResults] = useState([]);
   const [favourites, setFavourites] = useState([]);
   const handleFavour = (e) => {
     if (e && e.preventDefault) {
